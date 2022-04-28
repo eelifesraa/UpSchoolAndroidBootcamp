@@ -109,7 +109,7 @@ Kullanımı bu şekildedir.
 
 P.S. [Bu linkten](https://developer.android.com/guide/topics/resources/animation-resource#Property) faydalanabilirsiniz.
 
-    </br>
+</br>
     
 ## Cevap: 
 
