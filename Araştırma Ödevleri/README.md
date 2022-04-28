@@ -74,7 +74,10 @@ Android Studio, tools namespace yapilan tasarım uzerindeki ya da XML icinde bel
 
 P.S. [Bu linkten](https://developer.android.com/guide/topics/ui/look-and-feel/fonts-in-xml ) faydalanarak font family projenizde deneyebilirsiniz.
 
+</br>
+
 ## Cevap: 
+
 Android 8.0 ile birlikte yazı tiplerini kullanabilmek için yeni özellik eklenmiştir. res klasörü altında font klasörü açılır ve bu dosyanın içine yazı tipleri eklenir. <font> elemeni içerisine özellikleri yazılır. fontStyle ve fontWeight değerleri verilerek oluşturulur. 
     
 ```
@@ -106,4 +109,12 @@ Kullanımı bu şekildedir.
 
 P.S. [Bu linkten](https://developer.android.com/guide/topics/resources/animation-resource#Property) faydalanabilirsiniz.
 
+    </br>
+    
 ## Cevap: 
+
+Property animation, arka plan rengi veya alpha değeri gibi nesnenin özelliklerini belirli bir süre boyunca değiştiren, XML'de tanımlanan bir animasyonlardır Res klasörü altında animator klasörü açılır ve animasyon için olusturulacak dosyalar buraya eklenir.
+
+- Animator tagı, belirli bir süre boyunca bir animasyon gerçekleştirir.
+- ObjectAnimator tagı ise belirli bir süre boyunca bir nesnenin belirli özelliğini gösterir. 
+
