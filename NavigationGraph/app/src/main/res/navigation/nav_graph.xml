@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/noMessagesFragment">
+
+    <fragment
+        android:id="@+id/noMessagesFragment"
+        android:name="com.example.navigationgraph.NoMessagesFragment"
+        android:label="fragment_no_messages"
+        tools:layout="@layout/fragment_no_messages" >
+        <action
+            android:id="@+id/action_noMessagesFragment_to_noFavouritesFragment"
+            app:destination="@id/noFavouritesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noFavouritesFragment"
+        android:name="com.example.navigationgraph.NoFavouritesFragment"
+        android:label="fragment_no_favourites"
+        tools:layout="@layout/fragment_no_favourites" >
+        <action
+            android:id="@+id/action_noFavouritesFragment_to_lostConnectionFragment"
+            app:destination="@id/lostConnectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lostConnectionFragment"
+        android:name="com.example.navigationgraph.LostConnectionFragment"
+        android:label="fragment_lost_connection"
+        tools:layout="@layout/fragment_lost_connection" >
+        <action
+            android:id="@+id/action_lostConnectionFragment_to_noAddressFragment"
+            app:destination="@id/noAddressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noAddressFragment"
+        android:name="com.example.navigationgraph.NoAddressFragment"
+        android:label="fragment_no_address"
+        tools:layout="@layout/fragment_no_address" >
+        <action
+            android:id="@+id/action_noAddressFragment_to_pageNotFoundFragment"
+            app:destination="@id/pageNotFoundFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/pageNotFoundFragment3"
+        android:name="com.example.navigationgraph.PageNotFoundFragment"
+        android:label="fragment_page_not_found"
+        tools:layout="@layout/fragment_page_not_found" >
+        <action
+            android:id="@+id/action_pageNotFoundFragment3_to_yourCartisEmptyFragment"
+            app:destination="@id/yourCartisEmptyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yourCartisEmptyFragment"
+        android:name="com.example.navigationgraph.YourCartisEmptyFragment"
+        android:label="fragment_your_cartis_empty"
+        tools:layout="@layout/fragment_your_cartis_empty" >
+        <action
+            android:id="@+id/action_yourCartisEmptyFragment_to_noNotificationsYetFragment"
+            app:destination="@id/noNotificationsYetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noNotificationsYetFragment"
+        android:name="com.example.navigationgraph.NoNotificationsYetFragment"
+        android:label="fragment_no_notifications_yet"
+        tools:layout="@layout/fragment_no_notifications_yet" >
+        <action
+            android:id="@+id/action_noNotificationsYetFragment_to_noMessagesFragment"
+            app:destination="@id/noMessagesFragment" />
+    </fragment>
+</navigation>
