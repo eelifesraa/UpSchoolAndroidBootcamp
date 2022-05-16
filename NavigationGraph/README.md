@@ -4,6 +4,9 @@ This project shows how to use and work with the Navigation component. Navigation
 
 Fragments and data binding were used in this project.
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/61434175/168582490-de03c1c8-6a8f-4077-8a9a-dc4a972dee8a.gif" width=270 height=480>
+</p>
 
 
 # 📚 Resources 
