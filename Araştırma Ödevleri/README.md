@@ -67,3 +67,54 @@ Android Studio, tools namespace yapilan tasarım uzerindeki ya da XML icinde bel
 </layout>
 ```
 
+## <a name="3"></a> Araştırma Projesi 3
+
+- Font family dosyası nasıl oluşturulup kullanıyoruz?
+- Neden belirttiğiniz şekilde kullanımı tercih ediyoruz?
+
+P.S. [Bu linkten](https://developer.android.com/guide/topics/ui/look-and-feel/fonts-in-xml ) faydalanarak font family projenizde deneyebilirsiniz.
+
+</br>
+
+## Cevap: 
+
+Android 8.0 ile birlikte yazı tiplerini kullanabilmek için yeni özellik eklenmiştir. res klasörü altında font klasörü açılır ve bu dosyanın içine yazı tipleri eklenir. <font> elemeni içerisine özellikleri yazılır. fontStyle ve fontWeight değerleri verilerek oluşturulur. 
+    
+```
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/lobster_regular" />
+    <font
+        android:fontStyle="italic"
+        android:fontWeight="400"
+        android:font="@font/lobster_italic" />
+</font-family>
+```
+    
+Kullanımı bu şekildedir.
+    
+```
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lobster"/>
+```
+    
+## <a name="4"></a> Araştırma Projesi 4
+
+- Property Animation ile ilgili olarak objectAnimator ile animator arasındaki farkı kısaca açıklayınız
+
+P.S. [Bu linkten](https://developer.android.com/guide/topics/resources/animation-resource#Property) faydalanabilirsiniz.
+
+</br>
+    
+## Cevap: 
+
+Property animation, arka plan rengi veya alpha değeri gibi nesnenin özelliklerini belirli bir süre boyunca değiştiren, XML'de tanımlanan bir animasyonlardır Res klasörü altında animator klasörü açılır ve animasyon için olusturulacak dosyalar buraya eklenir.
+
+- Animator tagı, belirli bir süre boyunca bir animasyon gerçekleştirir.
+- ObjectAnimator tagı ise belirli bir süre boyunca bir nesnenin belirli özelliğini gösterir. 
+
